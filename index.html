@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="shortcut icon" href="icon/spotify-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left-nav">
+                <a class="spotify" href="">
+                    <img class="invert" src="icon/spotify.svg">
+                </a>
+            </div>
+            <div class="middel-nav">
+                <button class="home-btn center">
+                    <img src="icon/home.svg">
+                </button>
+                <div class="search-cointainer">
+                    <button id="searchBtn" class="search-btn center">
+                        <img src="icon/search.svg" alt="">
+                    </button>
+                    <div class="search-box">
+                        <input id="searchBox" type="text">
+                        <p class="plaseholder">What do you want to play?</p>
+                        <div class="letter-box">
+                            <button>Ctrl</button>
+                            <button>Shift</button>
+                            <button>L</button>
+                        </div>
+                    </div>
+                    <button id="crossBtn" class="cross-btn center" style="display: none;">
+                        <img src="icon/cross.svg" alt="">
+                    </button>
+                    <div class="line" style="margin: 12px;"></div>
+                    <button id="browes" class="cross-btn center" style="margin-right: 12px;">
+                        <img src="icon/browse.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="right-nav">
+                <button class="nav-btn" id="premium">Premium</button>
+                <button class="nav-btn" id="support">Support</button>
+                <button class="nav-btn" id="download">Download</button>
+                <div class="line"></div>
+                <button class="nav-btn center font-14" id="installApp">
+                    <img src="icon/download.svg" width="16px" alt="">
+                    <p>Install App</p>
+                </button>
+                <div class="signup-login">
+                    <button class="nav-btn font-14" id="signup">Sign up</button>
+                    <button id="login">Log in</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <aside>
+            <div class="your-library">
+                <div class="library-title">
+                    <p>Your Library</p>
+                    <button id="libraryAdd" class="center">+</button>
+                    <input type="file" id="inputFile" webkitdirectory directory multiple>
+                </div>
+                <div class="library-contain">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="aside-footer">
+                <div class="aside-footer-top">
+                    <div class="aside-atag">
+                        <a href="#">Legal</a>
+                        <a href="#">Safety & Privacy Center</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">About Ads</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+                    <div class="cookies">
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+                <div class="aside-footer-bottom">
+                    <button id="languageBtn" class="center">
+                        <img src="icon/world.svg">
+                        <p>English</p>
+                    </button>
+                </div>
+            </div>
+        </aside>
+        <div class="resizer"></div>
+
+        <!-- Section Code -->
+        <section>
+            <div class="music-leveler">
+                <div class="visualizer-wrapper">
+                    <div class="leveler" id="mainLeveler"></div>
+                    <div class="leveler reflection" id="reflectLeveler"></div>
+                </div>
+            </div>
+            <div class="music-player">
+                <div class="time-cointainer">
+                    <input type="range" id="timeLine">
+                    <div class="time">
+                        <div class="current-time">00:00</div>
+                        <div class="duration-time">00:00</div>
+                    </div>
+                </div>
+                <div class="controler">
+                    <button id="previous"><img src="icon/previous.svg" width="28px"></button>
+                    <button id="playPause"><img src="icon/play.svg"></button>
+                    <button id="next"><img src="icon/next.svg" width="28px"></button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
